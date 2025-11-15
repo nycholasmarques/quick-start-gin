@@ -1,0 +1,28 @@
+basePath: /api/v1
+host: localhost:8080
+info:
+  contact: {}
+  description: API documentation for quick-start-gin
+  title: quick-start-gin API
+  version: "0.1"
+paths:
+  /health:
+    get:
+      consumes:
+      - application/json
+      description: Returns API status
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Health check
+      tags:
+      - health
+schemes:
+- http
+swagger: "2.0"
